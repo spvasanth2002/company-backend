@@ -64,11 +64,9 @@ router.get('/', (req, res) => {
   res.send('API is running.');
 });
 
-app.use('/.netlify/functions/server', router); // path must route to lambda
 
 // Only export for serverless, don't start regular server
 module.exports.handler = serverless(app);
-
 // Remove this if deploying to Netlify functions:
 // app.listen(8000, () => {
 //     console.log('Server running on http://localhost:8000');
