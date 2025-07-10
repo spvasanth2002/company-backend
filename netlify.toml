@@ -1,4 +1,2 @@
 [build]
-  command = "npm install && npm run build"
-  functions = "netlify/functions"  # Points to functions directory
-  publish = "netlify/dist"         # Points to your static files
+functions = "netlify/functions"
